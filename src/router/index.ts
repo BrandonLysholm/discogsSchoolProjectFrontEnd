@@ -13,7 +13,7 @@ Vue.use(VueRouter);
 // Tried having these methods in a separate file but the linter hated me for that
 // @ts-ignore
 function checkLoggedIn({ next }) {
-  // console.log('entered middleware');
+  console.log('entered middleware');
   // console.log(`user.loggedIn is in middleware: ${store.getters.auth}`);
   if (store.getters.auth) {
     // console.log('passed validation in middleware');
